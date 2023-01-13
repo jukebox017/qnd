@@ -3,10 +3,6 @@ import './App.css';
 import {XYPlot, XAxis, YAxis, HorizontalGridLines, LineSeries} from 'react-vis';
 import { Link } from 'react-router-dom';
 
-const changeBgColor = () => {
-
-}
-
 function App() {
   const [bgColor, setBgColor] = useState('#282c34');
 
