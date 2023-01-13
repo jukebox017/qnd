@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 import { Button } from '@mui/material';
 
 function App() {
-  const [bgColor, setBgColor] = useState('#282c34');
+  const [bgColor, setBgColor] = useState<string>('#282c34');
 
   const changeBgColor = () => {
     // From https://stackoverflow.com/a/5365036/4020932
