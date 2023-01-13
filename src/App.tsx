@@ -31,6 +31,9 @@ function App() {
       <div style={{color: 'white'}}>
         Click <Link to={`bar-chart`}>here</Link> to see a simple bar chart.
       </div>
+      <div style={{color: 'white'}}>
+        Click <Link to={`star-wars`}>here</Link> to fetch data from the Star Wars API.
+      </div>
       <div style={{color: 'white', margin: '20px 0'}}>
         Click <Button onClick={changeBgColor}>here</Button> to change the background color to a random color.
       </div>

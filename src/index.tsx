@@ -5,6 +5,7 @@ import App from './App';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import ErrorPage from './ErrorPage';
 import BarChart from './BarChart/BarChart';
+import Swapi from './Swapi';
 
 const router = createBrowserRouter([
   {
@@ -15,7 +16,11 @@ const router = createBrowserRouter([
   {
     path: "bar-chart",
     element: <BarChart />
-  }
+  },
+  {
+    path: "star-wars",
+    element: <Swapi />
+  },
 ])
 
 const root = ReactDOM.createRoot(
