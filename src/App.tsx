@@ -21,7 +21,7 @@ function App() {
         <YAxis />
       </XYPlot>
       <div style={{color: 'white'}}>
-        Click <Link to={`bar-chart`}>here</Link> to see a simpel bar chart.
+        Click <Link to={`bar-chart`}>here</Link> to see a simple bar chart.
       </div>
     </div>
   );

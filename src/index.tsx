@@ -23,6 +23,7 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <React.StrictMode>
+    <h1 style={{backgroundColor: '#282c34', margin: 0, color: 'white'}}>React-vis Demo</h1>
     <RouterProvider router={router} />
   </React.StrictMode>
 );
