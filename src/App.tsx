@@ -2,11 +2,13 @@ import React, { useState } from 'react';
 import './App.css';
 import {XYPlot, XAxis, YAxis, HorizontalGridLines, LineSeries} from 'react-vis';
 import { Link } from 'react-router-dom';
+import { Button } from '@mui/material';
 
 function App() {
   const [bgColor, setBgColor] = useState('#282c34');
 
   const changeBgColor = () => {
+    // From https://stackoverflow.com/a/5365036/4020932
     setBgColor("#" + ((1 << 24) * Math.random() | 0).toString(16).padStart(6, "0"));
   }
 
@@ -30,7 +32,7 @@ function App() {
         Click <Link to={`bar-chart`}>here</Link> to see a simple bar chart.
       </div>
       <div style={{color: 'white', margin: '20px 0'}}>
-        Click <button onClick={changeBgColor}>here</button> to change the background color to a random color.
+        Click <Button onClick={changeBgColor}>here</Button> to change the background color to a random color.
       </div>
     </div>
   );
