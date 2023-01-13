@@ -1,6 +1,7 @@
 import { Button, CircularProgress } from '@mui/material';
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { StarWarsPerson } from '../../types/StarWarsPerson';
 
 function Swapi() {
   let [person, setPerson] = useState<string>('');
@@ -10,8 +11,8 @@ function Swapi() {
     setIsFetching(true);
     const randomInt = Math.floor(Math.random() * 49) + 1;
     const res = await fetch(`https://swapi.dev/api/people/${randomInt}`);
-    const json = await res.json();
-    setPerson(json.name);
+    const person: StarWarsPerson = await res.json();
+    setPerson(person.name);
     setIsFetching(false);
   }
 

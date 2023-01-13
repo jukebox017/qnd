@@ -26,7 +26,7 @@ export default class BarChart extends React.Component {
   render() {
     return (
       <div>
-        <h2 style={{color: 'black'}}>Here's a simple bar chart.</h2>
+        <h2 style={{color: 'black'}}>Here's a rather odd bar chart.</h2>
         <XYPlot xType="ordinal" width={300} height={300} xDistance={100}>
           <VerticalGridLines />
           <HorizontalGridLines />
